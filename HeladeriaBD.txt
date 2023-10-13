@@ -1,0 +1,14 @@
+-- Conectar a PostgreSQL (asegúrate de haber iniciado sesión en PostgreSQL antes de ejecutar estos comandos)
+
+-- Crear la base de datos Heladería
+CREATE DATABASE "Heladería";
+
+-- Conectar a la base de datos Heladería
+\c "Heladería";
+
+-- Crear la tabla sabores
+CREATE TABLE sabores (
+    id SERIAL PRIMARY KEY,
+    sabor VARCHAR(255),
+    precio DECIMAL(10, 2)
+);
